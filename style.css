@@ -1,0 +1,111 @@
+body {
+  background-image: url(images/shara_desert.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.headright {
+  display: flex;
+}
+h3 {
+  margin-right: 60px;
+  color: white;
+  font-weight: 100;
+}
+.headright img {
+  margin-top: 15px;
+  margin-right: 70px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 300px 300px;
+  row-gap: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.text {
+  grid-row: 1 / span 2;
+  margin-top: 120px;
+  margin-left: 50px;
+  color: white;
+  margin-right: 20px;
+}
+.saharatext {
+  font-size: 80px;
+  font-weight: bolder;
+}
+.text button {
+  padding: 13px 45px 13px 45px;
+  border-radius: 30px;
+  border-style: none;
+}
+.desert:hover,
+.mountain:hover,
+.pyramid:hover,
+.kdesert:hover {
+  transform: translateY(-6px);
+}
+
+.desert img,
+.mountain img,
+.pyramid img,
+.kdesert img {
+  border-radius: 20px;
+  border-style: none;
+  padding: 0px;
+}
+.desert,
+.mountain,
+.pyramid,
+.kdesert {
+  position: relative;
+}
+
+.desert-text,
+.mountain-text,
+.pyramidtext,
+.kdeserttext {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+@media screen and (min-width: 560px) and (max-width: 1000px) {
+  body {
+    background-image: url(images/shara_desert.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .text {
+    margin-top: 10px;
+  }
+  .headright img {
+    margin-right: 70px;
+  }
+
+  .desert img,
+  .mountain img,
+  .pyramid img,
+  .kdesert img {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 260px) and (max-width: 560px) {
+  body {
+    background-image: url(images/shara_desert.jpg);
+    background-size: 560px 400px;
+    background-repeat: repeat-y;
+  }
+}
